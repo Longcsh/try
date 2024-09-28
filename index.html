@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng từ 1 đến n</title>
+    <script>
+        function tinhTong() {
+            const n = parseInt(document.getElementById("n").value);
+            let tong = 0;
+            for (let i = 1; i <= n; i++) {
+                tong += i;
+            }
+            document.getElementById("ketQua").innerText = "Tổng từ 1 đến " + n + " là: " + tong;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tính tổng từ 1 đến n</h1>
+    <input type="number" id="n" placeholder="Nhập n">
+    <button onclick="tinhTong()">Tính tổng</button>
+    <p id="ketQua"></p>
+</body>
+</html>
